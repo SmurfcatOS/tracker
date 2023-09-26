@@ -25,6 +25,7 @@ function update(){
 
   let rf = new Math.seedrandom(`${idate.getYear()}${idate.getMonth()}${idate.getDay()}${hour}`);
   let r = rf();
+  console.log(r);
 
   let lo = (r * 360 - 180).toFixed(6);
   let la = (r * 180 - 90).toFixed(6);
