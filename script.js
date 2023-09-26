@@ -2,6 +2,10 @@ let c = document.getElementById("coords");
 let t = document.getElementById("time");
 let l = document.getElementById("link");
 
+let button = document.getElementById('button');
+
+button.addEventListener('click', update());
+
 const date = new Date();
 const year = date.getUTCFullYear();
 const month = date.getUTCMonth();
