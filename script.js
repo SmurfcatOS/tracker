@@ -21,7 +21,7 @@ t.innerText = date;
 l.innerHTML = `<a href="//www.google.com/maps/place/${lat},${long}">https://www.google.com/maps/place/${lat},${long}</a>`
 
 function update(){
-  let idate = document.getElementById("date").value;
+  let idate = document.getElementById("date").valueAsDate;
   let ihour = document.getElementById("hour").value;
 
   let rf = new Math.seedrandom(`${idate.getYear()}${idate.getMonth()}${idate.getDay()}${hour}`);
