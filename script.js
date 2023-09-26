@@ -12,10 +12,9 @@ function update(){
   
   let seed = `${year}${month}${day}${hours}${mins}`
   let randf = new Math.seedrandom(seed);
-  let rand = randf();
   
-  let long = (rand * 360 - 180).toFixed(6);
-  let lat = (rand * 180 - 90).toFixed(6);
+  let long = (randf() * 360 - 180).toFixed(6);
+  let lat = (randf() * 180 - 90).toFixed(6);
   
   c.innerText = lat + ", " + long;
   t.innerText = date;
