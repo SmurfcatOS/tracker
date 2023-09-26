@@ -17,7 +17,6 @@ const lat = (rand * 180 - 90).toFixed(6);
 
 c.innerText = lat + ", " + long;
 t.innerText = date;
-  
 l.innerHTML = `<a href="//www.google.com/maps/place/${lat},${long}">https://www.google.com/maps/place/${lat},${long}</a>`
 
 function update(){
