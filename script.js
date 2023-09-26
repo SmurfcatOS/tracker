@@ -29,7 +29,7 @@ function update(){
 
   console.log(idate, ihour);
 
-  let rf = new Math.seedrandom(`${idate.getYear()}${idate.getMonth()}${idate.getDay()}${hour}`);
+  let rf = new Math.seedrandom(`${idate.getUTCFullYear()}${idate.getUTCMonth()}${idate.getUTCDay()}${hour}`);
   let r = rf();
   console.log(r);
 
