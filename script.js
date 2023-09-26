@@ -35,5 +35,5 @@ function update(){
   let la = (r * 180 - 90).toFixed(6);
 
   document.getElementById("coords2").innerText = `${la}, ${lo}`;
-  document.getElementById("link2").innerText = `<a href="//www.google.com/maps/place/${la},${lo}">https://www.google.com/maps/place/${la},${lo}`;
+  document.getElementById("link2").innerHTML = `<a href="//www.google.com/maps/place/${la},${lo}">https://www.google.com/maps/place/${la},${lo}</a>`;
 }
