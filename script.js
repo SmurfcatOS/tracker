@@ -4,7 +4,7 @@ let l = document.getElementById("link");
 
 let button = document.getElementById('button');
 
-button.addEventListener('click', update());
+button.addEventListener('click', update);
 
 const date = new Date();
 const year = date.getUTCFullYear();
