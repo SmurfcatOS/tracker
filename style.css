@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#tracker {
+  padding: 3px;
+  background-color: #93c7e6;
+  border: solid #93c7e6;
+  border-radius: 10px;
+}
+
+#link {
+  word-break: break-all;
+}
