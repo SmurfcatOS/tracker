@@ -27,6 +27,8 @@ function update(){
   let idate = document.getElementById("date").valueAsDate || new Date();
   let ihour = document.getElementById("hour").value || 0;
 
+  console.log(idate, ihour);
+
   let rf = new Math.seedrandom(`${idate.getYear()}${idate.getMonth()}${idate.getDay()}${hour}`);
   let r = rf();
   console.log(r);
