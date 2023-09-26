@@ -8,8 +8,9 @@ function update(){
   let month = date.getUTCMonth();
   let day = date.getUTCDate();
   let hours = date.getUTCHours();
+  let mins = date.getUTCMinutes();
   
-  let seed = `${year}${month}${day}${hours}`
+  let seed = `${year}${month}${day}${hours}${mins}`
   let randf = new Math.seedrandom(seed);
   let rand = randf();
   
