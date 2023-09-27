@@ -18,7 +18,7 @@ function update(){
   
   c.innerText = lat + ", " + long;
   t.innerText = date;
-  l.innerHTML = `<a href="//www.google.com/maps/place/${lat},${long}">https://www.google.com/maps/place/${lat},${long}</a>`
+  l.innerHTML = `<a href="//www.google.com/maps/place/${lat},${long}" target="_blank" rel="noopener noreferrer">https://www.google.com/maps/place/${lat},${long}</a>`
 }
 
 setInterval(update, 1000);
