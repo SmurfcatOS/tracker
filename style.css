@@ -23,7 +23,6 @@ body {
   background-color: #93c7e6;
   border: solid #93c7e6;
   border-radius: 10px;
-  margin-bottom: 5px;
 }
 
 #link {
@@ -32,7 +31,6 @@ body {
 
 #smurfcatimg {
   width: 30%;
-  margin: 5px;
 }
 
 @media only screen and (max-width: 767px) {
