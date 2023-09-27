@@ -1,7 +1,8 @@
+let temp = 0;
+
 function update(){
   let c = document.getElementById("coords");
   let t = document.getElementById("time");
-  let l = document.getElementById("link");
   
   let date = new Date();
   let year = date.getUTCFullYear();
@@ -15,6 +16,11 @@ function update(){
   
   let long = (randf() * 360 - 180).toFixed(6);
   let lat = (randf() * 180 - 90).toFixed(6);
+
+  if(temp != lat){
+    document.getElementById("iframe").src = `//www.google.com/maps/place/${lat},${long}`;
+    temp = lat;
+  }
   
   c.innerText = lat + ", " + long;
   t.innerText = date;
