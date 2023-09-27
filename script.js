@@ -1,6 +1,7 @@
 function update(){
   let c = document.getElementById("coords");
   let t = document.getElementById("time");
+  let t = document.getElementById("link");
   
   let date = new Date();
   let year = date.getUTCFullYear();
